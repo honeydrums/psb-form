@@ -1,10 +1,12 @@
-body {
-	width: 100%;
-
+* {
 	box-sizing: border-box;
 
 	margin: 0;
 	padding: 0;
+}
+
+body {
+	width: 100%;
 
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 14px;
@@ -26,7 +28,7 @@ body {
 	background-repeat: no-repeat;
 }
 
-/* logo's margin */
+/* logo indents */
 
 .main-header {
 	margin: 0 211px 71px 211px;
@@ -36,4 +38,43 @@ body {
 
 main {
 	margin: 0 210px;
+}
+
+/* title styles */
+
+.features-title {
+	font-family: 'Open Sans';
+	font-size: 45px;
+	font-weight: 300;
+
+	text-shadow: 0 1px 1px rgba(35, 31, 32, 0.36);
+	color: rgba(255, 255, 255, 1);
+}
+
+.features-title span {
+	font-weight: 700;
+
+	color: rgba(255, 255, 255, 1);
+}
+
+/* features list */
+.features-list {
+	list-style-position: inside;
+
+
+	margin: 0;
+	padding: 0;
+}
+
+.features-list-item {
+	font-family: 'Open Sans';
+	font-size: 23px;
+	font-weight: 400;
+
+	text-shadow: 0 1px 1px rgba(35, 31, 32, 0.36);
+	color: rgba(255, 255, 255, 1);
+}
+
+.features-list-item span {
+	font-weight: 700;
 }
