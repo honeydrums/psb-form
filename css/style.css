@@ -10,10 +10,13 @@ body {
 	font-size: 14px;
 }
 
+/* bg img & page wrapper */
+
 .page-wrap {
 	width: 1340px;
 
 	margin: 0 auto;
+	padding-top: 35px;
 	padding-bottom: 427px;
 
 	background-color: rgba(255, 255, 255, 1);
@@ -21,4 +24,16 @@ body {
 	background-size: contain;
 	background-position: top center;
 	background-repeat: no-repeat;
+}
+
+/* logo's margin */
+
+.main-header {
+	margin: 0 211px 71px 211px;
+}
+
+/* main content's margin */
+
+main {
+	margin: 0 210px;
 }
