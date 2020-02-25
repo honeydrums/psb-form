@@ -19,7 +19,7 @@ body {
 
 	margin: 0 auto;
 	padding-top: 35px;
-	padding-bottom: 427px;
+	padding-bottom: 115px;
 
 	background-color: rgba(255, 255, 255, 1);
 	background-image: url('../img/background.png');
@@ -43,6 +43,8 @@ main {
 /* title styles */
 
 .features-title {
+	margin-bottom: 64px;
+
 	font-family: 'Open Sans';
 	font-size: 45px;
 	font-weight: 300;
@@ -58,12 +60,19 @@ main {
 }
 
 /* features list */
-.features-list {
-	list-style-position: inside;
 
+.features {
+	margin-bottom: 73px;
+}
+
+.features-list {
+	display: flex;
+	flex-wrap: wrap;
 
 	margin: 0;
 	padding: 0;
+
+	list-style-position: inside;
 }
 
 .features-list-item {
@@ -77,4 +86,162 @@ main {
 
 .features-list-item span {
 	font-weight: 700;
+}
+
+/* list items indents */
+
+.features-list-item:nth-child(1) {
+	margin: 0 54px 28px 0;
+}
+
+.features-list-item:nth-child(3) {
+	margin-right: 226px;
+}
+
+/* form decoration */
+
+.data-window {
+	padding: 16px 20px;
+
+	border: 16px solid rgb(255, 255, 255, 1);
+    background-color: rgb(239, 239, 239, 1);
+}
+
+.data-window-title {
+	margin-bottom: 25px;
+
+	font-family: 'Open Sans';
+	font-size: 40px;
+	font-weight: 300;
+
+	color: rgba(84, 84, 84, 1);
+}
+
+/* title on a blue bg */
+
+.application-step {
+	height: 55px;
+	margin-bottom: 59px;
+
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    background-color: rgba(72, 89, 166, 1);
+
+    font-size: 18px;
+    font-weight: 700;
+
+    color: rgba(255, 255, 255, 1);
+}
+
+.application-step span {
+	margin-right: 5px;
+	font-weight: 300;
+}
+
+/* input fields */
+
+.user-data-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.input-wrap {
+	width: 580px;
+	height: 41px;
+
+	margin-bottom: 28px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.input-wrap input {
+	width: 365px;
+	height: 41px;
+
+	border: 1px solid rgba(211, 214, 221, 1);
+
+	font-size: 16px;
+
+	padding: 3px 8px;
+}
+
+.user-data-wrap label {
+	font-size: 16px;
+	font-weight: 400;
+
+	color: rgba(84, 84, 84, 1);
+}
+
+.user-data-wrap label:nth-child(1) {
+	margin-right: 145px;
+}
+
+/* radio buttons */
+
+.radiobutton-block {
+	display: flex;
+
+	margin-bottom: 95px;
+}
+
+.radiobutton-block p {
+	margin-right: 91px;
+
+	font-size: 16px;
+	font-weight: 400;
+
+	color: rgba(84, 84, 84, 1);
+}
+
+.radiobutton-wrap {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.radiobutton-wrap label:nth-child(2) {
+	margin-right: 30px;
+}
+
+/* submit button */
+
+.submit-wrap {
+	width: 224px;
+	margin: 0 auto 49px;
+}
+
+.submit-wrap input {
+	width: 224px;
+	height: 50px;
+
+	border-radius: 5px;
+
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.submit-active {
+	color: rgba(255, 255, 255, 1);
+
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.56);
+	background-color: rgba(253, 135, 0, 1);
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.12) 0%, rgba(255, 255, 255, 0.12) 100%);
+}
+
+/* disabled submit button */
+
+.submit-inactive {
+	color: #a0a0a0;
+
+	box-shadow: inset 0 3px 0 0 #b4b4ba;
+	background-color: #d6d6d8;
+	background-image: none;
+}
+
+/* the shadow appears when the field is empty */
+
+.required-field {
+	box-shadow: inset 0 0 5px rgba(255, 19, 0, 0.57);
 }

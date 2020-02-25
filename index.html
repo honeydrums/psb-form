@@ -9,7 +9,7 @@
 <body>
 	<div class="page-wrap">
 		<header class="main-header">
-			<a href="#" class="main-header-logo">
+			<a href="" class="main-header-logo">
 				<img src="img/main-logo.png" alt="Логотип ПромСвязьБанк">
 			</a>
 		</header>
@@ -31,22 +31,30 @@
 				</div>
 				<form action="#" method="post">
 					<div class="user-data-wrap">
-						<label for="surname-field-id">Фамилия</label>
-							<input type="text" id="surname-field-id" name="user-surname" placeholder="Макаров">
-						<label for="name-field-id">Имя</label>
-							<input type="text" id="name-field-id" name="user-name" placeholder="Дмитрий">
-						<label for="middlename-field-id">Отчество</label>
-							<input type="text" id="middlename-field-id" name="user-middlename">
+						<div class="input-wrap">
+							<label for="surname-field-id">Фамилия</label>
+								<input type="text" id="surname-field-id" name="user-surname" placeholder="Макаров">
+						</div>
+						<div class="input-wrap">
+							<label for="name-field-id">Имя</label>
+								<input type="text" id="name-field-id" name="user-name" placeholder="Дмитрий">
+						</div>
+						<div class="input-wrap">
+							<label for="middlename-field-id">Отчество</label>
+								<input type="text" id="middlename-field-id" name="user-middlename">
+						</div>
 					</div>
-					<div class="radiobutton-wrap">
+					<div class="radiobutton-block">
 						<p>Гражданство РФ</p>
-						<label for="disabled-button-id">Нет</label>
+						<div class="radiobutton-wrap">
 							<input type="radio" id="disabled-button-id" name="agree" value="disabled" checked="">
-						<label for="enabled-button-id">Да</label>
-							<input type="radio" id="enabled-button-id" name="agree" value="enabled">
+							<label for="disabled-button-id">Нет</label>
+							<input type="radio" id="enabled-button-id" name="agree" value="enabled" checked="">
+							<label for="enabled-button-id">Да</label>
+						</div>
 					</div>
 					<div class="submit-wrap">
-						<input type="submit" name="" value="Отправить заявку">
+						<input type="submit" name="" value="Отправить заявку" class="submit-active">
 					</div>
 				</form>
 			</section>
