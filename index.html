@@ -34,14 +34,17 @@
 						<div class="input-wrap">
 							<label for="surname-field-id">Фамилия</label>
 								<input type="text" id="surname-field-id" name="user-surname" placeholder="Макаров">
+								<div class="error-input hidden-tip">Поле обязательно для заполнения</div>
 						</div>
 						<div class="input-wrap">
 							<label for="name-field-id">Имя</label>
 								<input type="text" id="name-field-id" name="user-name" placeholder="Дмитрий">
+								<div class="error-input hidden-tip">Поле обязательно для заполнения</div>
 						</div>
 						<div class="input-wrap">
 							<label for="middlename-field-id">Отчество</label>
 								<input type="text" id="middlename-field-id" name="user-middlename">
+								<div class="error-input hidden-tip">Поле обязательно для заполнения</div>
 						</div>
 					</div>
 					<div class="radiobutton-block">
@@ -51,10 +54,11 @@
 							<label for="disabled-button-id">Нет</label>
 							<input type="radio" id="enabled-button-id" name="agree" value="enabled" checked="">
 							<label for="enabled-button-id">Да</label>
+							<div class="error-nation hidden-tip">Кредит может быть выдан только гражданам РФ</div>
 						</div>
 					</div>
 					<div class="submit-wrap">
-						<input type="submit" name="" value="Отправить заявку" class="submit-active">
+						<input type="submit" name="" value="Отправить заявку" class="submit-inactive" disabled="">
 					</div>
 				</form>
 			</section>
