@@ -160,13 +160,14 @@ main {
 
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 }
 
 .input-wrap input {
-	width: 365px;
+	width: 350px;
 	height: 41px;
 
+	margin-right: 15px;
 	border: 1px solid rgba(211, 214, 221, 1);
 
 	font-size: 16px;
@@ -182,7 +183,7 @@ main {
 }
 
 .user-data-wrap label:nth-child(1) {
-	width: 23%;
+	width: 25%;
 }
 
 /* radio buttons */
@@ -190,7 +191,7 @@ main {
 .radiobutton-block {
 	display: flex;
 
-	margin-bottom: 95px;
+	/*margin-bottom: 95px;*/
 }
 
 .radiobutton-block p {
