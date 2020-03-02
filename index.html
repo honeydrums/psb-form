@@ -33,36 +33,33 @@
 					<div class="user-data-wrap">
 						<div class="input-wrap">
 							<label for="surname-field-id">Фамилия</label>
-								<input type="text" id="surname-field-id" name="user-surname" placeholder="Макаров">
-								<div class="error-input hidden-tip">Поле обязательно для заполнения</div>
+								<input type="text" class="input-field" id="surname-field-id" name="user-surname" placeholder="Макаров">
 						</div>
 						<div class="input-wrap">
 							<label for="name-field-id">Имя</label>
-								<input type="text" id="name-field-id" name="user-name" placeholder="Дмитрий">
-								<div class="error-input hidden-tip">Поле обязательно для заполнения</div>
+								<input type="text" class="input-field" id="name-field-id" name="user-name" placeholder="Дмитрий">
 						</div>
 						<div class="input-wrap">
 							<label for="middlename-field-id">Отчество</label>
-								<input type="text" id="middlename-field-id" name="user-middlename">
-								<div class="error-input hidden-tip">Поле обязательно для заполнения</div>
+								<input type="text" class="input-field" id="middlename-field-id" name="user-middlename">
 						</div>
 					</div>
 					<div class="radiobutton-block">
 						<p>Гражданство РФ</p>
 						<div class="radiobutton-wrap">
-							<input type="radio" id="disabled-button-id" name="agree" value="disabled" checked="">
+							<input type="radio" id="disabled-button-id" name="agree" value="disabled">
 							<label for="disabled-button-id">Нет</label>
-							<input type="radio" id="enabled-button-id" name="agree" value="enabled">
+							<input type="radio" id="enabled-button-id" name="agree" value="enabled" checked="">
 							<label for="enabled-button-id">Да</label>
-							<div class="error-nation hidden-tip">Кредит может быть выдан только гражданам РФ</div>
 						</div>
 					</div>
 					<div class="submit-wrap">
-						<input type="submit" name="" value="Отправить заявку" class="submit-inactive" disabled="">
+						<input type="submit" name="" value="Отправить заявку" class="submit-button" disabled>
 					</div>
 				</form>
 			</section>
 		</main>
 	</div>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

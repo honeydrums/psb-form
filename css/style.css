@@ -191,7 +191,7 @@ main {
 .radiobutton-block {
 	display: flex;
 
-	/*margin-bottom: 95px;*/
+	height: 100px;
 }
 
 .radiobutton-block p {
@@ -237,16 +237,6 @@ main {
 	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.12) 0%, rgba(255, 255, 255, 0.12) 100%);
 }
 
-/* disabled submit button */
-
-.submit-inactive {
-	color: #a0a0a0;
-
-	box-shadow: inset 0 3px 0 0 #b4b4ba;
-	background-color: #d6d6d8;
-	background-image: none;
-}
-
 /* the shadow appears when the field is empty */
 
 .required-field {
@@ -278,7 +268,7 @@ main {
 .error-nation {
 	position: relative;
 	top: -38px;
-	right: -385px;
+	right: -360px;
 
 	height: 56px;
 }
