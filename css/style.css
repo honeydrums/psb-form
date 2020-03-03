@@ -1,5 +1,6 @@
 * {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
 
 	margin: 0;
 	padding: 0;
@@ -72,8 +73,11 @@ main {
 }
 
 .features-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
 
 	margin: 0;
 	padding: 0;
@@ -129,9 +133,17 @@ main {
 	height: 55px;
 	margin-bottom: 59px;
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
 	background-color: rgba(72, 89, 166, 1);
 
 	font-size: 18px;
@@ -148,8 +160,11 @@ main {
 /* input fields */
 
 .user-data-wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
 }
 
 .input-wrap {
@@ -158,8 +173,14 @@ main {
 
 	margin-bottom: 28px;
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
 	/*justify-content: space-between;*/
 }
 
@@ -189,6 +210,8 @@ main {
 /* radio buttons */
 
 .radiobutton-block {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 
 	height: 100px;
@@ -232,31 +255,44 @@ main {
 .submit-active {
 	color: rgba(255, 255, 255, 1);
 
-	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.56);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.56);
+
+			box-shadow: 0 1px 0 rgba(255, 255, 255, 0.56);
 	background-color: rgba(253, 135, 0, 1);
+	background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.12)), to(rgba(255, 255, 255, 0.12)));
+	background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.12) 0%, rgba(255, 255, 255, 0.12) 100%);
 	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.12) 0%, rgba(255, 255, 255, 0.12) 100%);
 }
 
 /* the shadow appears when the field is empty */
 
 .required-field {
-	box-shadow: inset 0 0 5px rgba(255, 19, 0, 0.57);
+	-webkit-box-shadow: inset 0 0 5px rgba(255, 19, 0, 0.57);
+			box-shadow: inset 0 0 5px rgba(255, 19, 0, 0.57);
 }
 
 /* error message for input field */
 
 .error-input,
 .error-nation {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 
 	width: 245px;
 	height: 40px;
 
-	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+
+			box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 
 	padding: 10px 0;
 
-	align-items: center;
+	-webkit-box-align: center;
+
+		-ms-flex-align: center;
+
+			align-items: center;
 
 	font-size: 13px;
 	font-weight: 400;
@@ -281,10 +317,16 @@ main {
 	border-top: 6px solid rgba(173, 208, 247, 0);
 	width: 0;
 	height: 0;
-	box-sizing: border-box;
-	transform-origin: 0 0;
-	transform: rotate(45deg);
-	box-shadow: -3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+	-webkit-transform-origin: 0 0;
+		-ms-transform-origin: 0 0;
+			transform-origin: 0 0;
+	-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+	-webkit-box-shadow: -3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+			box-shadow: -3px 3px 5px 0 rgba(0, 0, 0, 0.2);
 	position: relative;
 	left: 1px;
 }
